@@ -162,6 +162,17 @@ a {
     text-decoration: none;
 }
 
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.card-img-top:hover {
+    /*     filter: grayscale(100%);
+ */
+    filter: brightness(100%);
+}
+
 .card-columns .card {
     margin-bottom: 0.75rem;
 }
@@ -189,12 +200,8 @@ a {
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     flex-shrink: 0;
+    filter: brightness(60%);
     width: 100%;
-}
-
-img {
-    vertical-align: middle;
-    border-style: none;
 }
 
 .btn:focus,
@@ -237,13 +244,4 @@ img {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
-
-.card:hover {
-    -ms-transform: scale(1.1);
-    /* IE 9 */
-    -webkit-transform: scale(1.1);
-    /* Safari 3-8 */
-    transform: scale(1.1);
-    border: 3px solid white;
 }
